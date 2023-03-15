@@ -1,5 +1,23 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 256px;
+    height: 256px;
+    border: 1px solid red;
+    padding: 0px;
+}
+
+
 .square-div {
     width: 16px;
     height: 16px;
     border: 1px solid red;
+    margin: 0;
+}
+
+.square-div:hover,
+.square-div.hovered {
+    background-color: black;
 }
