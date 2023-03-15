@@ -1,4 +1,4 @@
-let container = document.getElementById("container")
+let canvas = document.getElementById("canvas")
 
 for (let i = 0; i < 182; i++) {
     let newDiv = document.createElement("div");
@@ -8,7 +8,7 @@ for (let i = 0; i < 182; i++) {
         this.classList.add("hovered");
     });
     
-    container.appendChild(newDiv);
+    canvas.appendChild(newDiv);
 }
 
   
