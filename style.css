@@ -23,7 +23,6 @@
     border-radius: 50%;
     margin-top: 40em;
     margin-left: 60em;
-    overflow: hidden;
     border: 1px solid black;
 }
 
@@ -39,16 +38,12 @@
     position: fixed;
     width: 256px;
     height: 256px;
-    border: 1px solid red;
-    padding: 0px;
     background-color: white;
 }
 
 .square-div {
     width: 16px;
     height: 16px;
-    border: 1px solid red;
-    margin: 0;
 }
 
 .square-div:hover,
