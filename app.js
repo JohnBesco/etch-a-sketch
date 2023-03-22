@@ -11,4 +11,11 @@ for (let i = 0; i < 256; i++) {
     canvas.appendChild(newDiv);
 }
 
-  
+let resetBtn = document.getElementById("reset-btn");
+
+resetBtn.addEventListener("click", function() {
+    let newDiv = document.querySelectorAll(".square-div");
+    newDiv.forEach(function(newDiv) {
+        newDiv.classList.remove("hovered");
+    });
+});
