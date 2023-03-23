@@ -18,13 +18,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 1000px;
-    height: 800px;
+    width: 1100px;
+    height: 850px;
     background-color: #f45f5f;
     border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #title {
+    margin-top: 10px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -37,14 +39,32 @@ body {
 #reset-btn {
     align-self: flex-end;
     justify-self: end;
+    position: fixed;
     grid-column: 3/4;
     grid-row: 3/4;
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: inherit;
     background-color: #fffffe;
-    margin: 0 10px 10px 0;
+    margin: 0 20px 20px 0;
+    font-size: 18px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#color-btn {
+    align-self: flex-start;
+    justify-self: start;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: inherit;
+    background-color: #fffffe;
+    margin: 0 0px 20px 20px;
+    font-size: 18px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #reset-button:hover {
