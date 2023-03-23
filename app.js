@@ -1,6 +1,6 @@
 let canvas = document.getElementById("canvas")
 
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < 1802; i++) {
     let newDiv = document.createElement("div");
     newDiv.className = "square-div"
     
