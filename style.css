@@ -2,6 +2,8 @@ body {
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
 }
 
 #main-wrapper {
@@ -18,7 +20,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     width: 1000px;
     height: 800px;
-    background-color: #FF4040;
+    background-color: #f45f5f;
     border-radius: 20px;
 }
 
@@ -61,15 +63,19 @@ body {
     margin-top: 3em;
     width: 848px;
     height: 544px;
-    background-color: white;
+    background-color: rgb(233, 233, 233);
+    border: 0.1px solid rgb(18, 18, 18);
+    padding: 0px;
 }
 
 .square-div {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+    border: 0.1px solid rgb(198, 195, 195);
+    margin: 0px;
 }
 
 .square-div:hover,
 .square-div.hovered {
-    background-color: black;
+    background-color: rgb(2, 2, 2);
 }
