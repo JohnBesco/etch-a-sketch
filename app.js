@@ -1,9 +1,9 @@
 let canvas = document.getElementById("canvas");
 let isClicked = false;
 
-let smallCanvasSelector = document.getElementById("small-btn");
-let medCanvasSelector = document.getElementById("medium-btn");
 let largeCanvasSelector = document.getElementById("large-btn");
+let medCanvasSelector = document.getElementById("medium-btn");
+let smallCanvasSelector = document.getElementById("small-btn");
 
 for (let i = 0; i < 1802; i++) {
   let newDiv = document.createElement("div");
@@ -21,7 +21,12 @@ for (let i = 0; i < 1802; i++) {
   });
 }
 
-smallCanvasSelector.addEventListener('click', function() {
+largeCanvasSelector.addEventListener('click', function() {
+  let newDiv = document.querySelectorAll(".square-div");
+    newDiv.forEach(function(newDiv) {
+      newDiv.classList.remove("hovered");
+  });
+
   for (let i = 0; i < 1802; i++) {
     let newDiv = document.createElement("div");
     newDiv.className = "square-div";
@@ -45,6 +50,10 @@ smallCanvasSelector.addEventListener('click', function() {
 }, {once : true});
 
 medCanvasSelector.addEventListener('click', function () {
+  let newDiv = document.querySelectorAll(".square-div");
+    newDiv.forEach(function(newDiv) {
+      newDiv.classList.remove("hovered");
+  });
   for (let i = 0; i < 504; i++) {
     let newDiv = document.createElement("div");
     newDiv.className = "square-div";
