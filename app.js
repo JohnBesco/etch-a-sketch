@@ -76,6 +76,33 @@ medCanvasSelector.addEventListener('click', function () {
   }
 },  {once : true});
 
+smallCanvasSelector.addEventListener('click', function () {
+  let newDiv = document.querySelectorAll(".square-div");
+    newDiv.forEach(function(newDiv) {
+      newDiv.classList.remove("hovered");
+  });
+  for (let i = 0; i < 126; i++) {
+    let newDiv = document.createElement("div");
+    newDiv.className = "square-div";
+
+    newDiv.style.width = '59px';
+    newDiv.style.height = '59px';
+  
+    newDiv.addEventListener("click", function() {
+      isClicked = !isClicked;
+      console.log('Clicked!');
+    });
+  
+    newDiv.addEventListener("mouseover", function() {
+      if (isClicked) {
+        this.classList.add("hovered");
+      }
+    });
+
+    canvas.appendChild(newDiv);
+  }
+},  {once : true});
+
 
 let resetBtn = document.getElementById("reset-btn");
 
