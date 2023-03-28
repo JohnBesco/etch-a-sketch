@@ -41,9 +41,8 @@ smallCanvasSelector.addEventListener('click', function() {
     });
 
     canvas.appendChild(newDiv);
-
   }
-});
+}, {once : true});
 
 medCanvasSelector.addEventListener('click', function () {
   for (let i = 0; i < 504; i++) {
@@ -66,7 +65,7 @@ medCanvasSelector.addEventListener('click', function () {
 
     canvas.appendChild(newDiv);
   }
-})
+},  {once : true});
 
 
 let resetBtn = document.getElementById("reset-btn");
