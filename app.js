@@ -18,6 +18,7 @@ for (let i = 0; i < 1802; i++) {
 
   canvas.appendChild(newDiv);
 }
+
 let resetBtn = document.getElementById("reset-btn");
 
 resetBtn.addEventListener("click", function() {
@@ -26,3 +27,7 @@ resetBtn.addEventListener("click", function() {
         newDiv.classList.remove("hovered");
     });
 });
+
+let squareDiv = document.querySelectorAll ('.square-div');
+
+let colorPickerBtn = document.getElementById('color-btn');

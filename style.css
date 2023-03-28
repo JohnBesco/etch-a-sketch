@@ -49,6 +49,7 @@ body {
     background-color: #fffffe;
     margin: 0 20px 20px 0;
     font-size: 18px;
+    font-family: 'Alkatra', cursive;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -64,11 +65,18 @@ body {
     background-color: #fffffe;
     margin: 0 0px 20px 20px;
     font-size: 18px;
+    font-family: 'Alkatra', cursive;
+    line-height: 20px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-#reset-button:hover {
-    background-color: #242424;
+
+#reset-btn:hover {
+    background-color: #f2f1f1;
+}
+
+#color-btn:hover {
+    background-color: #f2f1f1;
 }
 
 #canvas {
@@ -93,9 +101,4 @@ body {
     height: 15px;
     border: 0.1px solid rgb(198, 195, 195);
     margin: 0px;
-}
-
-.square-div:hover,
-.square-div.hovered {
-    background-color: rgb(2, 2, 2);
 }
